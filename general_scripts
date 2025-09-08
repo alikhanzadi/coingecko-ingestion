@@ -1,0 +1,15 @@
+
+## Create Python Environment
+python -m venv crypto_data_env
+source crypto_data_env/bin/activate # On macOS/Linux
+##Or
+. crypto_data_env/bin/activate
+
+
+pip install dbt-snowflake==1.9.0
+dbt debug --profile crypto_data_project
+
+source crypto_data_env/bin/activate
+
+# ariflow:
+airflow standalone
