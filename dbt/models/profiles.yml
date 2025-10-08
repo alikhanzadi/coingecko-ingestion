@@ -1,0 +1,15 @@
+# coingeko_crypto_dbt:
+# # crypto_analytics:
+#   target: dev
+#   outputs:
+#     dev:
+#       type: snowflake
+#       account: "xgbyfat-mg79020"
+#       user: "dbt"
+#       password: "dbtPassword123"
+#       role: "TRANSFORM"
+#       database: "CRYPTO_DB"
+#       warehouse: "COMPUTE_WH"
+#       schema: "RAW"
+#       threads: 1
+#       client_session_keep_alive: false
