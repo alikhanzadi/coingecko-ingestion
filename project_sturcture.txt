@@ -1,3 +1,14 @@
+--> create database
+--> create table?
+--> create ingestion script for the first time
+--> first use the script to manually download
+    --> using gemini one
+--> use dbt to create layers
+--> figure out if we want to re-create the table everytime or not
+    --> if not we use ephemeral
+--> create airflow
+--> use airflow to run everything
+
 crypto_data_pipeline/
 ├── airflow/
 │   ├── dags/

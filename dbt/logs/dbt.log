@@ -1298,3 +1298,256 @@ where id = 1
 [0m19:00:07.472928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090dc490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d46f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090b2250>]}
 [0m19:00:07.473930 [debug] [MainThread]: Flushing usage events
 [0m19:00:07.766823 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:48:52.596869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eea0bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eef3790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ef1e6d0>]}
+
+
+============================== 19:48:52.615516 | 1fea53a4-d646-4c6b-852c-d2440b0f3c11 ==============================
+[0m19:48:52.615516 [info ] [MainThread]: Running with dbt=1.10.5
+[0m19:48:52.616695 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:48:52.639976 [info ] [MainThread]: dbt version: 1.10.5
+[0m19:48:52.640699 [info ] [MainThread]: python version: 3.11.7
+[0m19:48:52.641237 [info ] [MainThread]: python path: /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/crypto_data_env/bin/python
+[0m19:48:52.641809 [info ] [MainThread]: os info: macOS-26.0.1-x86_64-i386-64bit
+[0m19:48:54.074271 [info ] [MainThread]: Using profiles dir at /Users/alikhanzadi/.dbt
+[0m19:48:54.074874 [info ] [MainThread]: Using profiles.yml file at /Users/alikhanzadi/.dbt/profiles.yml
+[0m19:48:54.075590 [info ] [MainThread]: Using dbt_project.yml file at /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/dbt_project.yml
+[0m19:48:54.076395 [info ] [MainThread]: adapter type: snowflake
+[0m19:48:54.076941 [info ] [MainThread]: adapter version: 1.9.0
+[0m19:48:54.209585 [info ] [MainThread]: Configuration:
+[0m19:48:54.210295 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:48:54.210798 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:48:54.211261 [info ] [MainThread]: Required dependencies:
+[0m19:48:54.211816 [debug] [MainThread]: Executing "git --help"
+[0m19:48:54.270448 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:48:54.271792 [debug] [MainThread]: STDERR: "b''"
+[0m19:48:54.272343 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:48:54.272859 [info ] [MainThread]: Connection:
+[0m19:48:54.273390 [info ] [MainThread]:   account: xgbyfat-mg79020
+[0m19:48:54.273834 [info ] [MainThread]:   user: dbt
+[0m19:48:54.274278 [info ] [MainThread]:   database: CRYPTO_DB
+[0m19:48:54.274719 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m19:48:54.275256 [info ] [MainThread]:   role: TRANSFORM
+[0m19:48:54.275802 [info ] [MainThread]:   schema: RAW
+[0m19:48:54.276341 [info ] [MainThread]:   authenticator: None
+[0m19:48:54.276854 [info ] [MainThread]:   oauth_client_id: None
+[0m19:48:54.277309 [info ] [MainThread]:   query_tag: None
+[0m19:48:54.277757 [info ] [MainThread]:   client_session_keep_alive: False
+[0m19:48:54.278199 [info ] [MainThread]:   host: None
+[0m19:48:54.278639 [info ] [MainThread]:   port: None
+[0m19:48:54.279078 [info ] [MainThread]:   proxy_host: None
+[0m19:48:54.279525 [info ] [MainThread]:   proxy_port: None
+[0m19:48:54.279968 [info ] [MainThread]:   protocol: None
+[0m19:48:54.280400 [info ] [MainThread]:   connect_retries: 1
+[0m19:48:54.280838 [info ] [MainThread]:   connect_timeout: None
+[0m19:48:54.281271 [info ] [MainThread]:   retry_on_database_errors: False
+[0m19:48:54.281705 [info ] [MainThread]:   retry_all: False
+[0m19:48:54.282294 [info ] [MainThread]:   insecure_mode: False
+[0m19:48:54.282789 [info ] [MainThread]:   reuse_connections: True
+[0m19:48:54.283862 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m19:48:54.520801 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m19:48:54.601289 [debug] [MainThread]: Using snowflake connection "debug"
+[0m19:48:54.601718 [debug] [MainThread]: On debug: select 1 as id
+[0m19:48:54.602057 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:48:55.498928 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.897 seconds
+[0m19:48:55.500266 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:48:55.500840 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:48:55.507290 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.0133512, "process_in_blocks": "0", "process_kernel_time": 0.836997, "process_mem_max_rss": "217059328", "process_out_blocks": "0", "process_user_time": 4.424049}
+[0m19:48:55.508256 [debug] [MainThread]: Command `dbt debug` succeeded at 19:48:55.508078 after 3.01 seconds
+[0m19:48:55.508880 [debug] [MainThread]: Connection 'debug' was left open.
+[0m19:48:55.509384 [debug] [MainThread]: On debug: Close
+[0m19:48:55.796917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eefe490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1155cc710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e847250>]}
+[0m19:48:55.797668 [debug] [MainThread]: Flushing usage events
+[0m19:48:56.097997 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:49:20.196276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109d83d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a4a610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a4add0>]}
+
+
+============================== 19:49:20.204375 | 6c89151e-d369-4cbe-99c9-feba9a023207 ==============================
+[0m19:49:20.204375 [info ] [MainThread]: Running with dbt=1.10.5
+[0m19:49:20.205365 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:49:21.788332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6c89151e-d369-4cbe-99c9-feba9a023207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109f1690>]}
+[0m19:49:21.864108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6c89151e-d369-4cbe-99c9-feba9a023207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116aac110>]}
+[0m19:49:21.865838 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m19:49:22.105272 [debug] [MainThread]: checksum: fa4c2685620973c5adba0a491aa9c06e8cf48c9113a5280b45b6efa706ae8f4b, vars: {}, profile: , target: , version: 1.10.5
+[0m19:49:22.275992 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m19:49:22.276710 [debug] [MainThread]: Partial parsing: added file: coingeko_crypto_dbt://tests/assert_positive_price.sql
+[0m19:49:22.569074 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.crypto_analytics.staging
+- models.crypto_analytics.marts
+[0m19:49:22.589341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6c89151e-d369-4cbe-99c9-feba9a023207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116e93c50>]}
+[0m19:49:22.709368 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/target/manifest.json
+[0m19:49:22.712967 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/target/semantic_manifest.json
+[0m19:49:22.752443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6c89151e-d369-4cbe-99c9-feba9a023207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ac32cd0>]}
+[0m19:49:22.753359 [info ] [MainThread]: Found 2 data tests, 3 models, 1 source, 473 macros
+[0m19:49:22.753917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c89151e-d369-4cbe-99c9-feba9a023207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116e93a10>]}
+[0m19:49:22.756056 [info ] [MainThread]: 
+[0m19:49:22.756571 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:49:22.757220 [info ] [MainThread]: 
+[0m19:49:22.757916 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:49:22.764707 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_CRYPTO_DB_RAW'
+[0m19:49:22.846799 [debug] [ThreadPool]: Using snowflake connection "list_CRYPTO_DB_RAW"
+[0m19:49:22.847357 [debug] [ThreadPool]: On list_CRYPTO_DB_RAW: /* {"app": "dbt", "dbt_version": "1.10.5", "profile_name": "coingeko_crypto_dbt", "target_name": "dev", "connection_name": "list_CRYPTO_DB_RAW"} */
+show objects in CRYPTO_DB.RAW limit 10000;
+[0m19:49:22.847786 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:49:24.063506 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.216 seconds
+[0m19:49:24.067067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c89151e-d369-4cbe-99c9-feba9a023207', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aaaa0d0>]}
+[0m19:49:24.072319 [debug] [Thread-1 (]: Began running node test.coingeko_crypto_dbt.source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date.2867183ce0
+[0m19:49:24.072994 [info ] [Thread-1 (]: 1 of 1 START test source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date  [RUN]
+[0m19:49:24.073840 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_CRYPTO_DB_RAW, now test.coingeko_crypto_dbt.source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date.2867183ce0)
+[0m19:49:24.074422 [debug] [Thread-1 (]: Began compiling node test.coingeko_crypto_dbt.source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date.2867183ce0
+[0m19:49:24.102921 [debug] [Thread-1 (]: Compilation Error in test source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date (models/staging/sources.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'column_names'
+[0m19:49:24.103837 [error] [Thread-1 (]: 1 of 1 ERROR source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date . [[31mERROR[0m in 0.03s]
+[0m19:49:24.104743 [debug] [Thread-1 (]: Finished running node test.coingeko_crypto_dbt.source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date.2867183ce0
+[0m19:49:24.105502 [debug] [Thread-4 (]: Marking all children of 'test.coingeko_crypto_dbt.source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date.2867183ce0' to be skipped because of status 'error'.  Reason: Compilation Error in test source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date (models/staging/sources.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'column_names'.
+[0m19:49:24.107898 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:49:24.108435 [debug] [MainThread]: Connection 'test.coingeko_crypto_dbt.source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date.2867183ce0' was left open.
+[0m19:49:24.108912 [debug] [MainThread]: On test.coingeko_crypto_dbt.source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date.2867183ce0: Close
+[0m19:49:24.363020 [info ] [MainThread]: 
+[0m19:49:24.363758 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 1.61 seconds (1.61s).
+[0m19:49:24.364761 [debug] [MainThread]: Command end result
+[0m19:49:24.395195 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/target/manifest.json
+[0m19:49:24.397581 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/target/semantic_manifest.json
+[0m19:49:24.406631 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/target/run_results.json
+[0m19:49:24.407166 [info ] [MainThread]: 
+[0m19:49:24.407743 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m19:49:24.408225 [info ] [MainThread]: 
+[0m19:49:24.408806 [error] [MainThread]: [31mFailure in test source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date (models/staging/sources.yml)[0m
+[0m19:49:24.409391 [error] [MainThread]:   Compilation Error in test source_unique_coingecko_COINGECKO_HISTORICAL_PRICES_coin_id__date (models/staging/sources.yml)
+  macro 'dbt_macro__test_unique' takes no keyword argument 'column_names'
+[0m19:49:24.409909 [info ] [MainThread]: 
+[0m19:49:24.410411 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m19:49:24.417027 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 4.319201, "process_in_blocks": "0", "process_kernel_time": 0.878778, "process_mem_max_rss": "226852864", "process_out_blocks": "0", "process_user_time": 5.185284}
+[0m19:49:24.417904 [debug] [MainThread]: Command `dbt test` failed at 19:49:24.417756 after 4.32 seconds
+[0m19:49:24.418601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a7ba50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a7bd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f816ed0>]}
+[0m19:49:24.419308 [debug] [MainThread]: Flushing usage events
+[0m19:49:24.746709 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:36:37.533596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11530c410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11537c0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11537d750>]}
+
+
+============================== 00:36:37.541081 | 3e5b5306-3f22-40e5-a376-f93154432966 ==============================
+[0m00:36:37.541081 [info ] [MainThread]: Running with dbt=1.10.5
+[0m00:36:37.542244 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:36:37.751611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3e5b5306-3f22-40e5-a376-f93154432966', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115093150>]}
+[0m00:36:37.772376 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:36:37.774200 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:36:37.778088 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.47256717, "process_in_blocks": "0", "process_kernel_time": 0.485817, "process_mem_max_rss": "125042688", "process_out_blocks": "0", "process_user_time": 3.741473}
+[0m00:36:37.779149 [debug] [MainThread]: Command `cli deps` succeeded at 00:36:37.778948 after 0.47 seconds
+[0m00:36:37.779783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11530cad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdce450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdce750>]}
+[0m00:36:37.780358 [debug] [MainThread]: Flushing usage events
+[0m00:36:38.110183 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:23:19.578498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10de1ae10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109b9890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109ba550>]}
+
+
+============================== 15:23:19.590760 | 4173c7a2-0517-4ff0-8f7c-cfe5b0415693 ==============================
+[0m15:23:19.590760 [info ] [MainThread]: Running with dbt=1.10.5
+[0m15:23:19.591623 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:23:19.744575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4173c7a2-0517-4ff0-8f7c-cfe5b0415693', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a41d10>]}
+[0m15:23:19.758105 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:23:19.759256 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:23:19.761800 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.31399122, "process_in_blocks": "0", "process_kernel_time": 0.311894, "process_mem_max_rss": "125210624", "process_out_blocks": "0", "process_user_time": 3.149429}
+[0m15:23:19.762429 [debug] [MainThread]: Command `cli deps` succeeded at 15:23:19.762278 after 0.31 seconds
+[0m15:23:19.762954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105fa4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110948c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109a5b10>]}
+[0m15:23:19.763415 [debug] [MainThread]: Flushing usage events
+[0m15:23:20.047861 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:00:24.324967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec0580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d0de20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d0d1f0>]}
+
+
+============================== 20:00:24.345781 | 03845da3-eb46-4282-a6f5-f0f4237cbd9d ==============================
+[0m20:00:24.345781 [info ] [MainThread]: Running with dbt=1.9.0
+[0m20:00:24.347091 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt ', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:00:24.533453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03845da3-eb46-4282-a6f5-f0f4237cbd9d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b54790>]}
+[0m20:00:24.557010 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:00:24.558409 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m20:00:24.562059 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.33313376, "process_in_blocks": "0", "process_kernel_time": 0.303904, "process_mem_max_rss": "92463104", "process_out_blocks": "0", "process_user_time": 2.25808}
+[0m20:00:24.563249 [debug] [MainThread]: Command `cli deps` succeeded at 20:00:24.563032 after 0.33 seconds
+[0m20:00:24.564031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec0580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cf5250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105de0ee0>]}
+[0m20:00:24.564784 [debug] [MainThread]: Flushing usage events
+[0m20:00:24.877047 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:01:48.114139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fb8c190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbfd690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbfe2d0>]}
+
+
+============================== 18:01:48.120359 | 30b948f4-f271-441c-b231-7bc1f5051ef7 ==============================
+[0m18:01:48.120359 [info ] [MainThread]: Running with dbt=1.10.5
+[0m18:01:48.121067 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m18:01:48.287914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30b948f4-f271-441c-b231-7bc1f5051ef7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc915d0>]}
+[0m18:01:48.305762 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:01:48.307402 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:01:48.310582 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.28456357, "process_in_blocks": "0", "process_kernel_time": 0.358001, "process_mem_max_rss": "125104128", "process_out_blocks": "0", "process_user_time": 3.111478}
+[0m18:01:48.311484 [debug] [MainThread]: Command `cli deps` succeeded at 18:01:48.311192 after 0.29 seconds
+[0m18:01:48.312046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbfe150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fb8c590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fb82a90>]}
+[0m18:01:48.312544 [debug] [MainThread]: Flushing usage events
+[0m18:01:48.600058 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:31:44.536999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b07710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b07110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b14b50>]}
+
+
+============================== 21:31:44.546581 | fb788a4c-9413-4c9d-9bb8-78ef47e3235d ==============================
+[0m21:31:44.546581 [info ] [MainThread]: Running with dbt=1.10.5
+[0m21:31:44.548587 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:31:44.845306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb788a4c-9413-4c9d-9bb8-78ef47e3235d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c74990>]}
+[0m21:31:44.876330 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:31:44.879427 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:31:44.884505 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.4863675, "process_in_blocks": "0", "process_kernel_time": 0.666004, "process_mem_max_rss": "124919808", "process_out_blocks": "0", "process_user_time": 5.244791}
+[0m21:31:44.885775 [debug] [MainThread]: Command `cli deps` succeeded at 21:31:44.885466 after 0.49 seconds
+[0m21:31:44.886866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b15bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109abc750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10481e710>]}
+[0m21:31:44.887894 [debug] [MainThread]: Flushing usage events
+[0m21:31:45.217063 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:32:04.310431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133a58d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133d56d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126b1d90>]}
+
+
+============================== 13:32:04.323895 | f11a4a2d-edb5-452f-85a2-88a0b5e3b8ff ==============================
+[0m13:32:04.323895 [info ] [MainThread]: Running with dbt=1.10.5
+[0m13:32:04.324883 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:32:04.497956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f11a4a2d-edb5-452f-85a2-88a0b5e3b8ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134f9990>]}
+[0m13:32:04.513013 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:32:04.514278 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:32:04.517002 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.32738826, "process_in_blocks": "0", "process_kernel_time": 0.367098, "process_mem_max_rss": "124981248", "process_out_blocks": "0", "process_user_time": 3.212936}
+[0m13:32:04.517761 [debug] [MainThread]: Command `cli deps` succeeded at 13:32:04.517605 after 0.33 seconds
+[0m13:32:04.518271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133a4810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133961d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11355f750>]}
+[0m13:32:04.518757 [debug] [MainThread]: Flushing usage events
+[0m13:32:04.811797 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:50:41.118011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113012990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11300b150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113075b90>]}
+
+
+============================== 19:50:41.128900 | 167e1f13-ab56-48c9-8cc4-6f95114b015e ==============================
+[0m19:50:41.128900 [info ] [MainThread]: Running with dbt=1.10.5
+[0m19:50:41.129800 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt ', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:50:41.278878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '167e1f13-ab56-48c9-8cc4-6f95114b015e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11308bc50>]}
+[0m19:50:41.291899 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:50:41.293037 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:50:41.295372 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.2620881, "process_in_blocks": "0", "process_kernel_time": 0.308444, "process_mem_max_rss": "124788736", "process_out_blocks": "0", "process_user_time": 2.9891}
+[0m19:50:41.295979 [debug] [MainThread]: Command `cli deps` succeeded at 19:50:41.295836 after 0.26 seconds
+[0m19:50:41.296451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113010890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113115ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131c21d0>]}
+[0m19:50:41.296931 [debug] [MainThread]: Flushing usage events
+[0m19:50:41.575983 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:30:51.082971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb50150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebbdad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebbe790>]}
+
+
+============================== 18:30:51.094242 | 1da98d7a-ac8e-4860-ab26-d4b6a4b92fe3 ==============================
+[0m18:30:51.094242 [info ] [MainThread]: Running with dbt=1.10.5
+[0m18:30:51.095372 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m18:30:51.273973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1da98d7a-ac8e-4860-ab26-d4b6a4b92fe3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec43ad0>]}
+[0m18:30:51.289440 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:30:51.290696 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m18:30:51.293471 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.30163917, "process_in_blocks": "0", "process_kernel_time": 0.471237, "process_mem_max_rss": "125640704", "process_out_blocks": "0", "process_user_time": 4.054569}
+[0m18:30:51.294152 [debug] [MainThread]: Command `cli deps` succeeded at 18:30:51.294000 after 0.30 seconds
+[0m18:30:51.294640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eba8590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e8ef010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099068d0>]}
+[0m18:30:51.295115 [debug] [MainThread]: Flushing usage events
+[0m18:30:51.710425 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:20:03.834463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca80150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10caf1350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10caf2090>]}
+
+
+============================== 22:20:03.843242 | 6d85108d-2c4c-4736-b0f7-9800080b9453 ==============================
+[0m22:20:03.843242 [info ] [MainThread]: Running with dbt=1.10.5
+[0m22:20:03.844912 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'log_path': '/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:20:04.133941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6d85108d-2c4c-4736-b0f7-9800080b9453', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10caddf90>]}
+[0m22:20:04.159550 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:20:04.161925 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:20:04.169505 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.47984543, "process_in_blocks": "0", "process_kernel_time": 0.645274, "process_mem_max_rss": "124706816", "process_out_blocks": "0", "process_user_time": 5.209959}
+[0m22:20:04.170736 [debug] [MainThread]: Command `cli deps` succeeded at 22:20:04.170476 after 0.48 seconds
+[0m22:20:04.171742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cab0150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca808d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd8df50>]}
+[0m22:20:04.172706 [debug] [MainThread]: Flushing usage events
+[0m22:20:04.577482 [debug] [MainThread]: An error was encountered while trying to flush usage events
