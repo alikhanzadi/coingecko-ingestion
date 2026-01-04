@@ -1,0 +1,44 @@
+
+## Create Python Environment
+python -m venv crypto_data_env
+source crypto_data_env/bin/activate # On macOS/Linux
+##Or
+. crypto_data_env/bin/activate
+
+## 0- If the python version and Brew is not installed. (Summary, install brew, install pyenv, install python version, locally assign it to the project directory, create virtual environment.
+brew install pyenv
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install pyenv
+    echo >> /Users/alikhanzadi/.zprofile\
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/alikhanzadi/.zprofile\
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+brew install peens
+## 1- Add pyenv to your shell (if not already):
+echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+## 2- Install Python 3.10 latest version. This does not touch your system Python or global version.
+pyenv install 3.10.14
+## 3- Create a project-specific Python 3.10 environment
+cd /path/to/your/project
+pyenv local 3.10.14
+## 4- Create virtual environments
+python -m venv venv
+source venv/bin/activate
+pip install dbt-core dbt-snowflake
+
+
+pip install dbt-snowflake==1.9.0
+dbt debug --profile crypto_data_project
+
+source crypto_data_env/bin/activate
+
+# ---------------- AIRFLOW ----------------
+# ariflow:
+airflow standalone
+
+#Initialize Airflow
+# Within working directory (project roo)
+airflow migrate
+
+

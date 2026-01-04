@@ -1,0 +1,26 @@
+# dbt/crypto_analytics/models/staging/sources.yml
+version: 2
+
+sources:
+  - name: coingecko
+    database: CRYPTO_DB
+    schema: RAW
+    tables:
+      - name: COINGECKO_HISTORICAL_PRICES
+        identifier: COINGECKO_HISTORICAL_PRICES # Optional, if table name is different from file name
+        columns:
+          - name: coin_id
+            description: "Unique identifier for the cryptocurrency."
+          - name: date
+            description: "Date of the price data."
+          - name: price
+            description: "Daily closing price of the cryptocurrency in USD."
+          - name: market_cap
+            description: "Daily market capitalization in USD."
+          - name: total_volume
+            description: "Daily trading volume in USD."
+          - name: extraction_timestamp
+            description: "Timestamp when the data was extracted from CoinGecko."
+        tests:
+          - unique:
+              column_names: ['coin_id', 'date']

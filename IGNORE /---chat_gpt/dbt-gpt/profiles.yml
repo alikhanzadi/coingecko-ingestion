@@ -1,0 +1,30 @@
+# dbt Snowflake profile
+coingecko_project: # This is your profile name, reference it in dbt_project.yml
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: xgbyfat-mg79020 # e.g., ab12345.us-east-1
+      user: dbt
+      password: dbtPassword123
+      role: TRANSFORM
+      warehouse: COMPUTE_WH
+      database: CRYPTO_DB
+      schema: ANALYTICS # This is where dbt will build models by default
+      threads: 1
+      client_session_keep_alive: False # Important for long-running dbt jobs
+
+# coingecko_project:
+#   target: dev
+#   outputs:
+#     dev:
+#       type: snowflake
+#       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+#       user: "{{ env_var('SNOWFLAKE_USER') }}"
+#       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+#       role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+#       database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+#       warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+#       schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
+#       threads: 4
+#       client_session_keep_alive: false
