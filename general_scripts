@@ -34,6 +34,10 @@ dbt debug --profile crypto_data_project
 source crypto_data_env/bin/activate
 
 # ---------------- AIRFLOW ----------------
+# define a local airflow home
+export AIRFLOW_HOME='/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs'
+echo $AIRFLOW_HOME
+
 # ariflow:
 airflow standalone
 
@@ -41,4 +45,24 @@ airflow standalone
 # Within working directory (project roo)
 airflow migrate
 
+airflow dags reserialize
+#Updates dags
 
+airflow dags list
+#List dags
+
+cd /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs
+export $AIRFLOW_HOME='/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs' 
+# or
+export $AIRFLOW_HOME=$(pwd)/airflow_configs
+
+
+# ---------------- GIT ------------------
+git init
+#You need to tell your local Git installation the address of its counterpart on GitHub. This address is often called the "origin":
+git remote add origin https://github.com/alikhanzadi/coingecko-ingestion.git #Link Your Local Repo to the GitHub Repo 
+git remote set-url origin https://github.com/alikhanzadi/coingecko-ingestion.git #To change URL address, Set a New URL for "origin"
+git remote -v #check if the remote was added correctly by running:
+git add .
+git commit -m "first dag created. Dag creates table in Snowflake and adds raw data. No dbt yet."
+git push -u origin main #Push to origin (github)
