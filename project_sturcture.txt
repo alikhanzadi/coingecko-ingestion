@@ -5,7 +5,7 @@
     --> using gemini one
 --> use dbt to create layers
 --> figure out if we want to re-create the table everytime or not
-    --> if not we use ephemeral
+    --> if not we use incremental
 --> create airflow
 --> use airflow to run everything
 
@@ -61,3 +61,9 @@ crypto_data_pipeline/
         ├── profiles.yml      # Can be a copy/symlink from ~/.dbt/
         ├── dbt_project.yml
         └── ... (tests, macros, etc.)
+
+
+
+dbt:
+- Sources: Raw table stg_coingecko_prices
+- models: incremental model to add to a base table fact_daily_prices

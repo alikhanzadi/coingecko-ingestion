@@ -5,16 +5,16 @@ import pandas as pd
 from datetime import datetime
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 
-def get_coin_list():
-    """Fetches a list of all supported coins from CoinGecko API."""
-    url = "https://api.coingecko.com/api/v3/coins/list"
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching coin list: {e}")
-        return None
+# def get_coin_list():
+#     """Fetches a list of all supported coins from CoinGecko API."""
+#     url = "https://api.coingecko.com/api/v3/coins/list"
+#     try:
+#         response = requests.get(url, timeout=10)
+#         response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
+#         return response.json()
+#     except requests.exceptions.RequestException as e:
+#         print(f"Error fetching coin list: {e}")
+#         return None
 
 def get_market_chart(coin_id, vs_currency='usd', days='365'):
     """Fetches market chart data (price, market cap, total volume) for a coin."""
@@ -62,6 +62,7 @@ def transform_market_chart_data(data, coin_id):
 
     df['coin_id'] = coin_id
     df['extraction_timestamp'] = datetime.utcnow()
+    df['extraction_timestamp'] = df['extraction_timestamp'].astype(str)
 
     return df[['coin_id', 'date', 'price', 'market_cap', 'total_volume', 'extraction_timestamp']]
 
@@ -69,11 +70,11 @@ def extract_and_load_coingecko_data(**kwargs):
     """
     Airflow callable function to extract CoinGecko data and load into Snowflake.
     """
-    coin_ids = kwargs.get('coin_ids', ['bitcoin', 'ethereum', 'ripple', 'litecoin', 'cardano'])
+    coin_ids = kwargs.get('coin_ids', ['bitcoin', 'ethereum'])#, 'ripple', 'litecoin', 'cardano'])
     vs_currency = kwargs.get('vs_currency', 'usd')
 
-    snowflake_hook = SnowflakeHook(snowflake_conn_id='snowflake_default') # Ensure this matches your Airflow connection ID
-    table_name = "COINGECKO_HISTORICAL_PRICES"
+    snowflake_hook = SnowflakeHook(snowflake_conn_id='snowflake_default_rsa_test') # Ensure this matches the correct Airflow connection ID
+    table_name = "COINGECKO_HISTORICAL_PRICES_RAW"
     schema_name = "RAW"
     database_name = "CRYPTO_DB"
 

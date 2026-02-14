@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 import os
 
 # Import your extraction function
-from scripts.extract_coingecko_data_copy import extract_and_load_coingecko_data
+from scripts.extract_coingecko_data import extract_and_load_coingecko_data
 # from scripts.extract_coingecko_data_copy import get_market_chart#extract_and_load_coingecko_data
 
 # from scripts.extract_coingecko_data import get_market_chart
@@ -42,9 +42,9 @@ with DAG(
     create_raw_table = SQLExecuteQueryOperator(
         task_id='create_raw_coingecko_table',
         # snowflake_conn_id='snowflake_default',
-        conn_id='snowflake_default',
+        conn_id='snowflake_default_rsa_test',
         sql="""
-            CREATE TABLE IF NOT EXISTS CRYPTO_DB.RAW.COINGECKO_HISTORICAL_PRICES_TEMP_3 (
+            CREATE TABLE IF NOT EXISTS CRYPTO_DB.RAW.COINGECKO_HISTORICAL_PRICES_RAW (
                 coin_id VARCHAR,
                 date DATE,
                 price FLOAT,
@@ -79,7 +79,7 @@ with DAG(
     #     task_id='dbt_deps',
     #     bash_command=f'dbt deps --project-dir {DBT_PROJECT_DIR} --profile {DBT_PROFILE}',
     #     cwd=DBT_PROJECT_DIR # Set current working directory for dbt
-    # )
+    # )\
 
     # dbt_run = BashOperator(
     #     task_id='dbt_run',

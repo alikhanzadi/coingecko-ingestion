@@ -1,0 +1,153 @@
+[0m20:52:35.068635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11009bb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a0f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a0fc50>]}
+
+
+============================== 20:52:35.071117 | 20f7d837-22b8-43be-bd71-27650c28fbbc ==============================
+[0m20:52:35.071117 [info ] [MainThread]: Running with dbt=1.10.15
+[0m20:52:35.071336 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error': 'None', 'no_print': 'None', 'version_check': 'True', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'static_parser': 'True', 'printer_width': '80', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt init', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'introspect': 'True', 'log_path': 'logs'}
+[0m20:52:45.246443 [debug] [MainThread]: Starter project path: /opt/anaconda3/lib/python3.13/site-packages/dbt/include/starter_project
+[0m20:52:45.256392 [info ] [MainThread]: 
+Your new dbt project "coingecko_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:52:45.256986 [info ] [MainThread]: Setting up your profile.
+[0m20:52:53.148071 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:52:53.148432 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:52:53.148545 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:58:51.351556 [info ] [MainThread]: Profile coingecko_dbt written to /Users/alikhanzadi/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:58:51.376001 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 376.3392, "process_in_blocks": "0", "process_kernel_time": 0.953593, "process_mem_max_rss": "200245248", "process_out_blocks": "0", "process_user_time": 2.274546}
+[0m20:58:51.377082 [debug] [MainThread]: Command `dbt init` succeeded at 20:58:51.376863 after 376.34 seconds
+[0m20:58:51.378200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x158103490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111165490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1580d7350>]}
+[0m20:58:51.378902 [debug] [MainThread]: Flushing usage events
+[0m20:58:51.730374 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:29.386950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c35180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d0da50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d0d330>]}
+
+
+============================== 20:19:29.388979 | fa354107-2f2a-46d4-8d70-706a5755ca32 ==============================
+[0m20:19:29.388979 [info ] [MainThread]: Running with dbt=1.10.15
+[0m20:19:29.389280 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'log_format': 'default', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'write_json': 'True', 'target_path': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'cache_selected_only': 'False', 'empty': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'quiet': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'no_print': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:19:29.392882 [info ] [MainThread]: dbt version: 1.10.15
+[0m20:19:29.393033 [info ] [MainThread]: python version: 3.10.14
+[0m20:19:29.393154 [info ] [MainThread]: python path: /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/crypto_env/bin/python3.10
+[0m20:19:29.393268 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m20:19:30.961910 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:19:30.962135 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:19:30.962272 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:19:30.986845 [info ] [MainThread]: Using profiles dir at /Users/alikhanzadi/.dbt
+[0m20:19:30.987041 [info ] [MainThread]: Using profiles.yml file at /Users/alikhanzadi/.dbt/profiles.yml
+[0m20:19:30.987188 [info ] [MainThread]: Using dbt_project.yml file at /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt_project.yml
+[0m20:19:30.987340 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m20:19:30.991604 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.6379453, "process_in_blocks": "0", "process_kernel_time": 0.154699, "process_mem_max_rss": "189628416", "process_out_blocks": "0", "process_user_time": 0.934851}
+[0m20:19:30.991879 [debug] [MainThread]: Command `dbt debug` failed at 20:19:30.991838 after 1.64 seconds
+[0m20:19:30.992024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c35180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1106a3af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d07760>]}
+[0m20:19:30.992178 [debug] [MainThread]: Flushing usage events
+[0m20:19:31.319467 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:13:14.241560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c34d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d421240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d420b20>]}
+
+
+============================== 23:13:14.243566 | 3752b804-5d0c-43ba-85f5-05dc172811e4 ==============================
+[0m23:13:14.243566 [info ] [MainThread]: Running with dbt=1.10.15
+[0m23:13:14.243806 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'write_json': 'True', 'empty': 'None', 'debug': 'False', 'introspect': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'static_parser': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'target_path': 'None', 'log_format': 'default', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'printer_width': '80', 'use_experimental_parser': 'False', 'warn_error': 'None', 'log_path': 'logs', 'quiet': 'False'}
+[0m23:13:14.248417 [info ] [MainThread]: dbt version: 1.10.15
+[0m23:13:14.248577 [info ] [MainThread]: python version: 3.10.14
+[0m23:13:14.248711 [info ] [MainThread]: python path: /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/crypto_env/bin/python3.10
+[0m23:13:14.248825 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m23:13:14.539972 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:13:14.540195 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:13:14.540330 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:13:14.565313 [info ] [MainThread]: Using profiles dir at /Users/alikhanzadi/.dbt
+[0m23:13:14.565508 [info ] [MainThread]: Using profiles.yml file at /Users/alikhanzadi/.dbt/profiles.yml
+[0m23:13:14.565651 [info ] [MainThread]: Using dbt_project.yml file at /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt_project.yml
+[0m23:13:14.565808 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m23:13:14.567608 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.3605804, "process_in_blocks": "0", "process_kernel_time": 0.117487, "process_mem_max_rss": "189546496", "process_out_blocks": "0", "process_user_time": 0.738605}
+[0m23:13:14.567847 [debug] [MainThread]: Command `dbt debug` failed at 23:13:14.567813 after 0.36 seconds
+[0m23:13:14.567987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c34d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113dbbaf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d41f760>]}
+[0m23:13:14.568134 [debug] [MainThread]: Flushing usage events
+[0m23:13:14.930885 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:42:21.885359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c86d0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d945990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d945270>]}
+
+
+============================== 18:42:21.887342 | 9b6888ce-e20a-4194-b2f5-5d8e77386812 ==============================
+[0m18:42:21.887342 [info ] [MainThread]: Running with dbt=1.10.15
+[0m18:42:21.887589 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'write_json': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'introspect': 'True', 'partial_parse': 'True', 'empty': 'None', 'debug': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'log_path': 'logs', 'target_path': 'None', 'log_format': 'default', 'use_colors': 'True', 'quiet': 'False', 'use_experimental_parser': 'False'}
+[0m18:42:21.894912 [info ] [MainThread]: dbt version: 1.10.15
+[0m18:42:21.895074 [info ] [MainThread]: python version: 3.10.14
+[0m18:42:21.895195 [info ] [MainThread]: python path: /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/crypto_env/bin/python3.10
+[0m18:42:21.895308 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m18:42:22.409965 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:42:22.410190 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:42:22.410321 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:42:22.435097 [info ] [MainThread]: Using profiles dir at /Users/alikhanzadi/.dbt
+[0m18:42:22.435295 [info ] [MainThread]: Using profiles.yml file at /Users/alikhanzadi/.dbt/profiles.yml
+[0m18:42:22.435429 [info ] [MainThread]: Using dbt_project.yml file at /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt_project.yml
+[0m18:42:22.435590 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:42:22.437423 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.5803887, "process_in_blocks": "0", "process_kernel_time": 0.152416, "process_mem_max_rss": "189644800", "process_out_blocks": "0", "process_user_time": 0.742358}
+[0m18:42:22.437665 [debug] [MainThread]: Command `dbt debug` failed at 18:42:22.437632 after 0.58 seconds
+[0m18:42:22.437801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c86d0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114233010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d8ee710>]}
+[0m18:42:22.437950 [debug] [MainThread]: Flushing usage events
+[0m18:42:22.773404 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:13:18.770165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10867d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109755a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109755330>]}
+
+
+============================== 20:13:18.772163 | b4dd5c06-6dad-4c41-b86d-c8dea2d8f05c ==============================
+[0m20:13:18.772163 [info ] [MainThread]: Running with dbt=1.10.15
+[0m20:13:18.772429 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'partial_parse': 'True', 'version_check': 'True', 'introspect': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'debug': 'False', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:13:18.779702 [info ] [MainThread]: dbt version: 1.10.15
+[0m20:13:18.779881 [info ] [MainThread]: python version: 3.10.14
+[0m20:13:18.780010 [info ] [MainThread]: python path: /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/crypto_env/bin/python3.10
+[0m20:13:18.780127 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m20:13:19.236699 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:13:19.236918 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:13:19.237046 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:13:19.261477 [info ] [MainThread]: Using profiles dir at /Users/alikhanzadi/.dbt
+[0m20:13:19.261678 [info ] [MainThread]: Using profiles.yml file at /Users/alikhanzadi/.dbt/profiles.yml
+[0m20:13:19.261814 [info ] [MainThread]: Using dbt_project.yml file at /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt_project.yml
+[0m20:13:19.261969 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m20:13:19.263677 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.52437913, "process_in_blocks": "0", "process_kernel_time": 0.141074, "process_mem_max_rss": "189677568", "process_out_blocks": "0", "process_user_time": 0.744778}
+[0m20:13:19.263938 [debug] [MainThread]: Command `dbt debug` failed at 20:13:19.263904 after 0.52 seconds
+[0m20:13:19.264078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10867d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10974eaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096fa620>]}
+[0m20:13:19.264225 [debug] [MainThread]: Flushing usage events
+[0m20:13:19.604121 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:49:48.412082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085510c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109469990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109469270>]}
+
+
+============================== 14:49:48.414022 | 8bda1fb2-e222-4d82-b806-841f99d56f6c ==============================
+[0m14:49:48.414022 [info ] [MainThread]: Running with dbt=1.10.15
+[0m14:49:48.414250 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'partial_parse': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'use_colors': 'True', 'debug': 'False', 'log_format': 'default', 'fail_fast': 'False', 'invocation_command': 'dbt debug', 'profiles_dir': '/Users/alikhanzadi/.dbt', 'printer_width': '80', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'target_path': 'None', 'warn_error': 'None', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_path': 'logs'}
+[0m14:49:48.420991 [info ] [MainThread]: dbt version: 1.10.15
+[0m14:49:48.421159 [info ] [MainThread]: python version: 3.10.14
+[0m14:49:48.421285 [info ] [MainThread]: python path: /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/crypto_env/bin/python3.10
+[0m14:49:48.421404 [info ] [MainThread]: os info: macOS-26.1-arm64-arm-64bit
+[0m14:49:48.959845 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:49:48.960071 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:49:48.960206 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:49:48.984522 [info ] [MainThread]: Using profiles dir at /Users/alikhanzadi/.dbt
+[0m14:49:48.984734 [info ] [MainThread]: Using profiles.yml file at /Users/alikhanzadi/.dbt/profiles.yml
+[0m14:49:48.984867 [info ] [MainThread]: Using dbt_project.yml file at /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/dbt_project.yml
+[0m14:49:48.985024 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:49:48.986903 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.60670197, "process_in_blocks": "0", "process_kernel_time": 0.159677, "process_mem_max_rss": "189218816", "process_out_blocks": "0", "process_user_time": 0.746809}
+[0m14:49:48.987141 [debug] [MainThread]: Command `dbt debug` failed at 14:49:48.987107 after 0.61 seconds
+[0m14:49:48.987281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085510c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109462a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10940f5e0>]}
+[0m14:49:48.987433 [debug] [MainThread]: Flushing usage events
+[0m14:49:49.298701 [debug] [MainThread]: An error was encountered while trying to flush usage events

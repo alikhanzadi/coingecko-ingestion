@@ -45,16 +45,52 @@ airflow standalone
 # Within working directory (project roo)
 airflow migrate
 
-airflow dags reserialize
 #Updates dags
+airflow dags reserialize
 
-airflow dags list
 #List dags
+airflow dags list
 
 cd /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs
 export $AIRFLOW_HOME='/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs' 
 # or
 export $AIRFLOW_HOME=$(pwd)/airflow_configs
+
+# Define a connection
+airflow connections add 'snowflake_default_rsa' \
+    --conn-type 'snowflake' \
+    --conn-login 'YOUR_USER' \
+    --conn-extra '{"account": "YOUR_ACCOUNT", "warehouse": "YOUR_WH", "database": "YOUR_DB", "role": "YOUR_ROLE", "private_key_file": "/absolute/path/to/rsa_key.p8"}'
+
+airflow connections add snowflake_default_rsa_test \\
+  --conn-type snowflake \\
+  --conn-login DBTLEARNER1 \\
+  --conn-extra '{"account": "xgbyfat-mg79020", "warehouse": "WH", "database": "CRYPTO_DB", "role": "TRANSFORM", "private_key_file": "/Users/alikhanzadi/.snowflake/rsa_key.p8"}'\
+
+# List all providers installed
+airflow providers list
+
+# Show dag and database folders
+airflow config get-value core dags_folder
+airflow config get-value database sql_alchemy_conn
+
+# Kill all airflow instances:
+pkill -f airflow
+
+# Shows the instances
+lsof -i :8080
+# Show details of an instance 12345 is the instance number from lsof -i :8080
+ps -fp 12345
+
+
+#Run from two terminals (two instances). This gives you cleaner shutdown control.
+# Terminal 1:
+airflow webserver --port 8080
+
+# Terminal 2:
+airflow scheduler
+
+
 
 
 # ---------------- GIT ------------------
@@ -66,3 +102,31 @@ git remote -v #check if the remote was added correctly by running:
 git add .
 git commit -m "first dag created. Dag creates table in Snowflake and adds raw data. No dbt yet."
 git push -u origin main #Push to origin (github)
+
+
+# ------------- DBT ------------------------
+# Generate private key (unencrypted PKCS8)
+openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -inform PEM -out /Users/alikhanzadi/.snowflake/rsa_key.p8
+
+# Generate public key
+openssl rsa -in /Users/alikhanzadi/.snowflake/rsa_key.p8 -pubout -out /Users/alikhanzadi/.snowflake/rsa_key.pub
+
+# Place the two files (.p8 and .pub) here
+/Users/alikhanzadi/.snowflake/rsa_key.pub
+
+# Remove the headers from the .pub file, also line breaks - it should be all lines, it should be a base64 string
+-----BEGIN PUBLIC KEY-----
+-----END PUBLIC KEY-----
+
+# In snowflake:
+ALTER USER dbt
+SET RSA_PUBLIC_KEY='MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A...';
+
+# Verify user. Check if rsa_public_key field is populated and matches the public key.
+DESC USER dbt;
+
+# Add this line to the profile.yml. GPT says password should be deleted, I didnt and worked.
+      private_key_path: /Users/alikhanzadi/.snowflake/rsa_key.p8
+
+# Important: Do NOT touch the private key
+
