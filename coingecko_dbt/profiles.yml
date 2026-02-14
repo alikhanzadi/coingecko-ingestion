@@ -1,0 +1,14 @@
+coingecko_dbt:
+  outputs:
+    dev:
+      account: xgbyfat-mg79020
+      database: CRYPTO_DB
+      password: dbtPassword123
+      role: TRANSFORM
+      schema: RAW
+      threads: 1
+      type: snowflake
+      user: DBTLEARNER1
+      warehouse: COMPUTE_WH
+      private_key_path: /Users/alikhanzadi/.snowflake/rsa_key.p8      
+  target: dev
