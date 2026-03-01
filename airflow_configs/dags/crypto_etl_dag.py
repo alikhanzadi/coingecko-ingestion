@@ -8,6 +8,7 @@ from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 # from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 from datetime import datetime, timedelta
 import os
+import pendulum
 
 # Import your extraction function
 from scripts.extract_coingecko_data import extract_and_load_coingecko_data
@@ -19,6 +20,7 @@ from scripts.extract_coingecko_data import extract_and_load_coingecko_data
 # Define dbt project and profile paths
 # DBT_PROJECT_DIR = os.path.join(os.environ.get('AIRFLOW_HOME', '~/airflow_crypto_project'), 'dbt', 'crypto_analytics')
 # DBT_PROFILE = 'coingeko_crypto_dbt' # Must match the profile name in ~/.dbt/profiles.yml
+local_tz = pendulum.timezone("America/Denver")
 
 default_args = {
     'owner': 'airflow',
@@ -29,13 +31,18 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
+DBT_PROJECT_DIR = "/Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/coingecko_dbt"
+
 with DAG(
     dag_id='crypto_data_pipeline',
     default_args=default_args,
     description='A DAG to extract crypto data, load to Snowflake, and transform with dbt',
     # schedule_interval=timedelta(days=1), # Run daily
     start_date=datetime(2025, 12, 26),
+    schedule="21 0 * * *",   # 14:00 = 2 PM
     catchup=False,
+    # schedule="@daily",
+    max_active_runs=1,
     tags=['crypto', 'dbt', 'snowflake'],
 ) as dag:
 
@@ -79,7 +86,8 @@ with DAG(
     #     task_id='dbt_deps',
     #     bash_command=f'dbt deps --project-dir {DBT_PROJECT_DIR} --profile {DBT_PROFILE}',
     #     cwd=DBT_PROJECT_DIR # Set current working directory for dbt
-    # )\
+    # ) 
+    
 
     # dbt_run = BashOperator(
     #     task_id='dbt_run',
@@ -87,10 +95,16 @@ with DAG(
     #     cwd=DBT_PROJECT_DIR
     # )
 
+    dbt_run = BashOperator(
+        task_id='dbt_run',
+        bash_command=f'cd /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/coingecko_dbt && dbt run',
+        cwd=DBT_PROJECT_DIR
+    )
+
     # dbt_test = BashOperator(
     #     task_id='dbt_test',
     #     bash_command=f'dbt test --project-dir {DBT_PROJECT_DIR} --profile {DBT_PROFILE}',
     #     cwd=DBT_PROJECT_DIR
     # )
 
-    create_raw_table >> extract_and_load #>> dbt_deps >> dbt_run >> dbt_test
+    create_raw_table >> extract_and_load >> dbt_run #>> dbt_test

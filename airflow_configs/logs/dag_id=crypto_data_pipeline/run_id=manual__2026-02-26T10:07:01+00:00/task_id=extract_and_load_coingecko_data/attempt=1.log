@@ -1,0 +1,12 @@
+{"timestamp":"2026-02-26T10:08:35.013466Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-26T10:08:35.013626Z","level":"info","event":"Filling up the DagBag from /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs/dags/crypto_etl_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-26T10:08:35.023459Z","level":"info","event":"Fetching data for bitcoin...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:08:35.138023Z","level":"info","event":"Successfully processed 365 records for bitcoin.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:08:35.138127Z","level":"info","event":"Fetching data for ethereum...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:08:35.165977Z","level":"info","event":"Error fetching market chart for ethereum: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=365&interval=daily","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:08:35.167048Z","level":"info","event":"No data processed for ethereum.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:08:35.168041Z","level":"info","event":"Loading 365 records into Snowflake table CRYPTO_DB.RAW.COINGECKO_HISTORICAL_PRICES_RAW...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:08:35.222326Z","level":"info","event":"Snowflake Connector for Python Version: 3.18.0, Python Version: 3.10.14, Platform: macOS-26.1-arm64-arm-64bit","logger":"snowflake.connector.connection","filename":"connection.py","lineno":521}
+{"timestamp":"2026-02-26T10:08:35.222499Z","level":"info","event":"Connecting to GLOBAL Snowflake domain","logger":"snowflake.connector.connection","filename":"connection.py","lineno":1464}
+{"timestamp":"2026-02-26T10:08:36.958703Z","level":"info","event":"Successfully loaded 365 records to Snowflake.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:08:36.959128Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}

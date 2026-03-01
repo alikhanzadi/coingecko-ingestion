@@ -1,0 +1,11 @@
+{"timestamp":"2026-02-28T12:05:05.946383Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-28T12:05:05.946559Z","level":"info","event":"Filling up the DagBag from /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs/dags/crypto_etl_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-28T12:05:05.959003Z","level":"info","event":"Fetching data for bitcoin...","logger":"task.stdout"}
+{"timestamp":"2026-02-28T12:05:06.151906Z","level":"info","event":"Successfully processed 365 records for bitcoin.","logger":"task.stdout"}
+{"timestamp":"2026-02-28T12:05:06.152009Z","level":"info","event":"Fetching data for ethereum...","logger":"task.stdout"}
+{"timestamp":"2026-02-28T12:05:06.322637Z","level":"info","event":"Successfully processed 365 records for ethereum.","logger":"task.stdout"}
+{"timestamp":"2026-02-28T12:05:06.323794Z","level":"info","event":"Loading 730 records into Snowflake table CRYPTO_DB.RAW.COINGECKO_HISTORICAL_PRICES_RAW...","logger":"task.stdout"}
+{"timestamp":"2026-02-28T12:05:06.368627Z","level":"info","event":"Snowflake Connector for Python Version: 3.18.0, Python Version: 3.10.14, Platform: macOS-26.1-arm64-arm-64bit","logger":"snowflake.connector.connection","filename":"connection.py","lineno":521}
+{"timestamp":"2026-02-28T12:05:06.368858Z","level":"info","event":"Connecting to GLOBAL Snowflake domain","logger":"snowflake.connector.connection","filename":"connection.py","lineno":1464}
+{"timestamp":"2026-02-28T12:05:08.885129Z","level":"info","event":"Successfully loaded 730 records to Snowflake.","logger":"task.stdout"}
+{"timestamp":"2026-02-28T12:05:08.885875Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}

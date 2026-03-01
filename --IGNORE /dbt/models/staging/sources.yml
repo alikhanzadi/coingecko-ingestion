@@ -2,12 +2,12 @@
 version: 2
 
 sources:
-  - name: coingecko
+  - name: crypto_db
     database: CRYPTO_DB
     schema: RAW
     tables:
-      - name: COINGECKO_HISTORICAL_PRICES
-        identifier: COINGECKO_HISTORICAL_PRICES # Optional, if table name is different from file name
+      - name: COINGECKO_HISTORICAL_PRICES_RAW
+        identifier: raw_crypto_historical_prices # Optional, if table name is different from file name
         columns:
           - name: coin_id
             description: "Unique identifier for the cryptocurrency."

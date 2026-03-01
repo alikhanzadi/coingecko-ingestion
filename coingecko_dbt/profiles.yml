@@ -5,7 +5,7 @@ coingecko_dbt:
       database: CRYPTO_DB
       password: dbtPassword123
       role: TRANSFORM
-      schema: RAW
+      schema: DEV
       threads: 1
       type: snowflake
       user: DBTLEARNER1

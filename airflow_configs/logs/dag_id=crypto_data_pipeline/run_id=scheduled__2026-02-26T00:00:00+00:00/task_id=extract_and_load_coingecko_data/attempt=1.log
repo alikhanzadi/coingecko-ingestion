@@ -1,0 +1,10 @@
+{"timestamp":"2026-02-26T10:09:03.078140Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-26T10:09:03.078307Z","level":"info","event":"Filling up the DagBag from /Users/alikhanzadi/Desktop/Learn/Projects/coingecko_airflow_dbt/airflow_configs/dags/crypto_etl_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-26T10:09:03.088488Z","level":"info","event":"Fetching data for bitcoin...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:09:03.169238Z","level":"info","event":"Error fetching market chart for bitcoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:09:03.170255Z","level":"info","event":"No data processed for bitcoin.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:09:03.170288Z","level":"info","event":"Fetching data for ethereum...","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:09:03.201868Z","level":"info","event":"Error fetching market chart for ethereum: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=365&interval=daily","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:09:03.202350Z","level":"info","event":"No data processed for ethereum.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:09:03.202392Z","level":"info","event":"No data collected across all coins. Exiting.","logger":"task.stdout"}
+{"timestamp":"2026-02-26T10:09:03.202512Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
